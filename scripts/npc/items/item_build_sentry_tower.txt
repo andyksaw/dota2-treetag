@@ -1,0 +1,27 @@
+"item_build_sentry_tower"
+{
+	"ID"					"1005"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityTextureName"	"item_building_sentry"
+	"AbilityGoldCost"    	"30"
+	"ItemInitialCharges"	"30"
+	"AbilityCastRange"		"500"
+	"AOERadius"				"128"
+	"ItemDroppable" 		"0"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build.lua"
+			"Function"		"OnBuildSentry"
+			"Target"		"POINT"
+			"UnitName"		"npc_building_sentry_tower"
+			"HullRadius"	"128"
+			"BuildTime"		"8"
+			"BuildCost"    	"30"
+			"DayVision"		"750"
+			"NightVision"	"550"
+		}
+    }
+}

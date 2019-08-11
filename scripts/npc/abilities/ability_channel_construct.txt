@@ -1,0 +1,63 @@
+"ability_channel_construct"
+{
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	"AbilityUnitTargetType"     	"DOTA_UNIT_TARGET_ALL"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"neutral_spell_immunity"
+    "MaxLevel"                      "25"
+    "AbilityChannelTime"			"1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25"
+	"AbilityCastRange"				"500"
+	
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"Target"				"TARGET"
+			"ScriptFile"			"abilities/ability_build_channel.lua"
+			"Function"				"OnChannelBegin"
+		}
+		"ApplyModifier"
+        {
+            "ModifierName" 			"modifier_channeling"
+            "Target" 				"CASTER"
+        }
+	}
+	"OnChannelInterrupted"
+	{
+		"RunScript"
+		{
+			"Target"				"TARGET"
+			"ScriptFile"			"abilities/ability_build_channel.lua"
+			"Function"				"OnChannelInterrupt"
+		}
+		"RemoveModifier"
+        {
+            "ModifierName" 			"modifier_channeling"
+            "Target" 				"CASTER"
+        }
+	}
+
+	"Modifiers"
+	{
+	    "modifier_channeling"
+	    {
+	        "ThinkInterval" "1.5"
+	        "OnIntervalThink"
+	        {
+	            "ApplyModifier"
+	            {
+	                "ModifierName"  "channelling_animation"
+	                "Target"        "CASTER"
+	            }
+	        }
+	    }
+
+	    "channelling_animation"
+	    {
+	        "IsHidden" "1"
+	        "Duration" "1.4"
+	        "OverrideAnimation" "ACT_DOTA_CAST_ABILITY_5"
+	    }
+	}
+}

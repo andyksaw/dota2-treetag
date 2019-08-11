@@ -1,0 +1,21 @@
+"ability_smash_tree"
+{
+    "BaseClass"             	"ability_datadriven"
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
+	"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_CUSTOM"
+    "AbilityTextureName"    	"axe_counter_helix"
+	"MaxLevel"              	"1"
+	"AbilityCastRange"			"350"
+	"AbilityCastPoint"			"0.0"
+	"AbilityCooldown"			"0.5"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_smash_trees.lua"
+			"Function"		"OnSmashSingle"
+			"Target"		"TARGET"
+		}
+    }
+}

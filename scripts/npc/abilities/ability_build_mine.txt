@@ -1,0 +1,22 @@
+"ability_build_mine"
+{
+	"BaseClass"				"ability_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityTextureName"	"item_rapier"
+	"AbilityGoldCost"    	"500"
+	"AbilityCastRange"		"500"
+	"AOERadius"				"160"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build.lua"
+			"Function"		"OnBuildMine"
+			"Target"		"POINT"
+			"UnitName"		"npc_building_mine"
+			"HullRadius"	"192"
+			"BuildTime"		"5"
+			"BuildCost"    	"500"
+		}
+    }
+}

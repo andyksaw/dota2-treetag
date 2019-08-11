@@ -1,0 +1,25 @@
+"item_build_barracks"
+{
+	"ID"					"1008"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityTextureName"	"item_building_barracks"
+	"AbilityGoldCost"    	"150"
+	"ItemInitialCharges"	"150"
+	"AbilityCastRange"		"500"
+	"AOERadius"				"256"
+	"ItemDroppable" 		"0"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build.lua"
+			"Function"		"OnBuildBarrack"
+			"Target"		"POINT"
+			"UnitName"		"npc_building_barracks"
+			"HullRadius"	"256"
+			"BuildTime"		"10"
+			"BuildCost"    	"150"
+		}
+    }
+}

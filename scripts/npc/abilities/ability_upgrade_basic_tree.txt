@@ -1,0 +1,33 @@
+"ability_upgrade_basic_tree"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+    "BaseClass"             "ability_datadriven"
+    "AbilityTextureName"    "attribute_bonus"
+	"MaxLevel"              "2"
+    "AbilityGoldCost"    	"25 80"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build_upgrade.lua"
+			"Function"		"OnUpgrade"
+			"Target"		"POINT"
+			"UpgradeTime"	"5 10"
+			"Name"			"npc_building_basic_tree_2 npc_building_basic_tree_3"
+			"HealthBoost"	"200 300"
+		}
+    }
+    "AbilitySpecial"
+	{
+	    "01"
+	    { 
+	        "var_type"  "FIELD_FLOAT"
+	        "cost" 		"25 80"
+	    }
+	    "02"
+	    { 
+	        "var_type"  "FIELD_FLOAT"
+	        "time" 		"5 10"
+	    }
+	}
+}

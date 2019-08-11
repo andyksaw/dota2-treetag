@@ -1,0 +1,19 @@
+"ability_research_aura_regen"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+    "BaseClass"             "ability_datadriven"
+    "AbilityTextureName"    "attribute_bonus"
+	"MaxLevel"              "4"
+    "AbilityGoldCost"    	"50 150 250 500"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_research.lua"
+			"Function"		"OnResearchSkillLevel"
+			"Target"		"POINT"
+			"ResearchTime"	"2 2 2 2"
+			"Skill"			"ability_aura_regen"
+		}
+    }
+}

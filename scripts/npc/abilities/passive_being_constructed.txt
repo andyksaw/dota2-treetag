@@ -1,0 +1,19 @@
+"passive_being_constructed"
+{
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"neutral_spell_immunity"
+	"Modifiers"
+	{
+		"modifier_being_constructed"
+		{
+			"Passive"				"1"
+			"States"
+			{
+				"MODIFIER_STATE_PASSIVES_DISABLED"	"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_DISARMED"			"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_ROOTED"				"MODIFIER_STATE_VALUE_ENABLED"
+			}
+		}
+	}
+}

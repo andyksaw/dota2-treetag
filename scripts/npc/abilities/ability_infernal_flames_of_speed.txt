@@ -1,0 +1,48 @@
+"ability_infernal_flames_of_speed"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "BaseClass"             "ability_datadriven"
+    "AbilityTextureName"    "doom_bringer_scorched_earth"
+	"MaxLevel"              "1"
+	"AbilityCastPoint" 		"0"
+	"AbilityCooldown" 		"20"
+	"AbilityManaCost" 		"50"
+    "OnSpellStart"
+    {
+    	"ApplyModifier"
+	    {
+	        "ModifierName"  "modifier_flames_of_speed"
+	        "Target"        "CASTER"
+	    }
+	    "FireSound"
+	    {
+	    	"EffectName"	"Hero_DoomBringer.ScorchedEarthAura"
+	    	"Target"		"CASTER"
+	    }
+    }
+
+    "Modifiers"
+	{
+	    "modifier_flames_of_speed"
+		{
+			"IsBuff" 			"1"
+		    "Duration" 			"8"
+		    "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" 	"45"
+            }
+            "EffectName" "particles/econ/courier/courier_golden_roshan/golden_roshan_ambient.vpcf"
+    			"EffectAttachType" "follow_origin"
+            "OnCreated" 
+		    {
+		        "AttachEffect"
+		        {
+		        	"Target" 			"CASTER"
+		            "EffectName" 		"particles/econ/courier/courier_roshan_lava/courier_roshan_lava_fire.vpcf"
+		           	"EffectAttachType" 	"follow_origin"
+		           	"EffectRadius"   	"350"
+		        }
+		    }      
+		}
+	}
+}

@@ -1,0 +1,31 @@
+"ability_research_blink"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+    "BaseClass"             "ability_datadriven"
+    "AbilityTextureName"    "antimage_blink"
+	"MaxLevel"              "2"
+    "AbilityGoldCost"    	"150 200"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_research.lua"
+			"Function"		"ResearchBlinkUpgrade"
+			"Target"		"POINT"
+			"ResearchTime"	"2 2"
+		}
+    }
+    "AbilitySpecial"
+    {
+    	"01"
+	    { 
+	        "var_type"  	"FIELD_FLOAT"
+	        "time"		 	"2 2"
+	    }
+	    "02"
+	    { 
+	        "var_type"  	"FIELD_FLOAT"
+	        "cost"		 	"150 200"
+	    }
+    }
+}

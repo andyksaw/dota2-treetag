@@ -1,0 +1,25 @@
+"item_build_armored_tree"
+{
+	"ID"					"1007"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityTextureName"	"item_building_armored_tree"
+	"AbilityGoldCost"    	"30"
+	"ItemInitialCharges"	"30"
+	"AbilityCastRange"		"500"
+	"AOERadius"				"128"
+	"ItemDroppable" 		"0"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build.lua"
+			"Function"		"OnBuild"
+			"Target"		"POINT"
+			"UnitName"		"npc_building_armored_tree"
+			"HullRadius"	"128"
+			"BuildTime"		"5"
+			"BuildCost"    	"30"
+		}
+    }
+}

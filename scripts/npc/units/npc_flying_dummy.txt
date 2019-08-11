@@ -1,0 +1,12 @@
+"npc_flying_dummy"
+    {
+        "BaseClass"                 "npc_dota_base_additive"
+        "Model"                     "models/development/invisiblebox.mdl"
+        "Level"                     "0"
+        "Ability1"                  "passive_flying_dummy"
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_FLY"
+        "UnitRelationshipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+        "VisionDaytimeRange"        "0"
+        "VisionNighttimeRange"      "0"
+    }

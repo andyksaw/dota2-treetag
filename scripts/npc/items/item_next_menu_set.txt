@@ -1,0 +1,21 @@
+//=================================================================================================================
+// Buildings
+//=================================================================================================================
+
+"item_next_menu_set"
+{
+	"ID"					"1003"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+	"AbilityTextureName"	"item_building_scroll_down"
+	"ItemDroppable" 		"0"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build_menu.lua"
+			"Function"		"OnNextSet"
+			"Target"		"CASTER"
+		}
+    }
+}

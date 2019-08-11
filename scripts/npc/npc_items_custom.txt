@@ -1,0 +1,501 @@
+"DOTAAbilities"
+{
+	"item_build_armored_tree"
+	{
+		"ID"					"1007"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_armored_tree"
+		"AbilityGoldCost"    	"30"
+		"ItemInitialCharges"	"30"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"128"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuild"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_armored_tree"
+				"HullRadius"	"128"
+				"BuildTime"		"5"
+				"BuildCost"    	"30"
+			}
+	    }
+	}
+	"item_build_barracks"
+	{
+		"ID"					"1008"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_barracks"
+		"AbilityGoldCost"    	"150"
+		"ItemInitialCharges"	"150"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"256"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuildBarrack"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_barracks"
+				"HullRadius"	"256"
+				"BuildTime"		"10"
+				"BuildCost"    	"150"
+			}
+	    }
+	}
+	"item_build_basic_tree"
+	{
+		"ID"					"1006"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_basic_tree"
+		"AbilityGoldCost"    	"10"
+		"ItemInitialCharges"	"10"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"128"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuild"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_basic_tree"
+				"HullRadius"	"128"
+				"BuildTime"		"4"
+				"BuildCost"    	"10"
+			}
+	    }
+	}
+	"item_build_infernal_killer"
+	{
+		"ID"					"1012"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_infernal_killer"
+		"AbilityGoldCost"    	"1500"
+		"ItemInitialCharges"	"1500"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"128"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuild"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_infernal_killer"
+				"HullRadius"	"128"
+				"BuildTime"		"15"
+				"BuildCost"    	"1500"
+			}
+	    }
+	}
+	
+	"item_build_invisible_tree"
+	{
+		"ID"					"1011"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_invisible_tree"
+		"AbilityGoldCost"    	"100"
+		"ItemInitialCharges"	"100"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"128"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuild"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_invisible_tree"
+				"HullRadius"	"128"
+				"BuildTime"		"5"
+				"BuildCost"    	"100"
+			}
+	    }
+	}
+	"item_build_library"
+	{
+		"ID"					"1010"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_library"
+		"AbilityGoldCost"    	"225"
+		"ItemInitialCharges"	"225"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"256"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuild"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_library"
+				"HullRadius"	"256"
+				"BuildTime"		"6"
+				"BuildCost"    	"225"
+			}
+	    }
+	}
+	"item_build_resource_structure"
+	{
+		"ID"					"1005"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_resource_structure"
+		"AbilityGoldCost"    	"20"
+		"ItemInitialCharges"	"20"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"128"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuildFarm"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_resource_structure"
+				"HullRadius"	"128"
+				"BuildTime"		"5"
+				"BuildCost"    	"20"
+				"Income"		"1"
+			}
+	    }
+	}
+	"item_build_sentry_tower"
+	{
+		"ID"					"1005"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_sentry"
+		"AbilityGoldCost"    	"30"
+		"ItemInitialCharges"	"30"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"128"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuildSentry"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_sentry_tower"
+				"HullRadius"	"128"
+				"BuildTime"		"8"
+				"BuildCost"    	"30"
+				"DayVision"		"750"
+				"NightVision"	"550"
+			}
+	    }
+	}
+	"item_build_tree_of_life"
+	{
+		"ID"					"1009"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_building_tree_of_life"
+		"AbilityGoldCost"    	"200"
+		"ItemInitialCharges"	"200"
+		"AbilityCastRange"		"500"
+		"AOERadius"				"256"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build.lua"
+				"Function"		"OnBuild"
+				"Target"		"POINT"
+				"UnitName"		"npc_building_tree_of_life"
+				"HullRadius"	"256"
+				"BuildTime"		"8"
+				"BuildCost"    	"200"
+			}
+	    }
+	}
+	"item_hawk_eye"
+	{
+		"ID"					"1102"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"item_lotus_sphere"
+		"ItemCost"				"0"
+	}
+	"item_robe_of_concealment"
+	{
+		"ID"					"1107"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"item_crimson_robe"
+		"ItemCost"				"300"
+	}
+	"item_infernal_boots_of_force"
+	{
+		"ID"							"1104"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_force_boots"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"50"
+		"ItemCost"						"100"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_boots_of_force.lua"
+				"Function"				"OnUse"
+				"Target"				"CASTER"
+				"PushLength"			"%push_length"
+			}
+		}
+		"Modifiers"
+	    {
+	        "modifier_item_boots_of_force"
+	        {
+	            "Passive"  				"1"
+	            "IsHidden"				"1"
+	            "IsPurgable"       		"0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" 	"%bonus_speed"
+	            }
+	        } 
+	    }
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"push_length"			"600"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_speed"			"100"
+			}
+		}
+	}
+	"item_infernal_boots_of_phase"
+	{
+		"ID"							"1105"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_ghost_boots"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"50"
+		"ItemCost"						"150"
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"			"modifier_item_phased"
+				"Target"				"CASTER"
+				"Duration"				"%duration"
+			}
+			"CreateThinker"
+			{
+				"ModifierName"			"modifier_item_phased_thinker"
+				"Target"				"CASTER"
+			}
+		}
+		"Modifiers"
+	    {
+	        "modifier_item_phased"
+	        {
+	            "IsBuff"       			"1"
+	            "IsPurgable"       		"0"
+	            "States"
+	            {
+	                "MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY"	"MODIFIER_STATE_VALUE_ENABLED"
+	            }
+	        } 
+	        "modifier_item_phased_thinker"
+	        {
+	        	"IsHidden"				"1"
+	            "IsPurgable"       		"0"
+	            "Duration" 				"%duration"
+	            "ThinkInterval" 		"0.3"
+	            "OnIntervalThink"
+	            {
+	                "RunScript"
+					{
+						"ScriptFile"	"abilities/ability_smash_trees.lua"
+						"Function"		"OnSmashAreaAtCaster"
+						"Target"		"CASTER"
+						"Radius"		"75"
+					}
+	            }
+	        } 
+	        "modifier_item_boots_of_phase"
+	        {
+	            "Passive"  				"1"
+	            "IsHidden"				"1"
+	            "IsPurgable"       		"0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" 	"%bonus_speed"
+	            }
+	        }
+	    }
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"4"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_speed"			"80"
+			}
+		}
+	}
+	"item_infernal_boots_of_travel"
+	{
+		"ID"							"1106"
+		"BaseClass"						"item_travel_boots_2"
+		"AbilityTextureName"			"item_travel_boots_2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityCooldown"				"60"
+		"AbilityChannelTime"			"5"
+		"AbilityManaCost"				"175"
+		"ItemCost"						"250"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"100"
+			}
+		}
+	}
+	"item_infernal_gem"
+	{
+		"ID"					"1101"
+		"BaseClass"				"item_gem"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ItemCost"				"0"
+	}
+	"item_infernal_wards"
+	{
+		"ID"					"1103"
+		"BaseClass"				"item_ward_observer"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"AbilityTextureName"	"item_ward_observer"
+		"AbilityCastRange"		"600"
+		"AbilityCastPoint"		"0.0"
+		"AbilityCooldown"		"45"
+		"AbilityManaCost" 		"50"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lifetime"				"420"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_range"			"2000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health"				"200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration_minutes_tooltip"				"7"
+			}
+		}
+	}
+	"item_next_menu_set"
+	{
+		"ID"					"1003"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+		"AbilityTextureName"	"item_building_scroll_down"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build_menu.lua"
+				"Function"		"OnNextSet"
+				"Target"		"CASTER"
+			}
+	    }
+	}
+	"item_prev_menu_set"
+	{
+		"ID"					"1004"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+		"AbilityTextureName"	"item_building_scroll_up"
+		"ItemDroppable" 		"0"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_build_menu.lua"
+				"Function"		"OnPrevSet"
+				"Target"		"CASTER"
+			}
+	    }
+	}
+	"item_telescope"
+	{
+		"ID"					"1100"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"	"item_greevil_whistle"
+		"AbilityCooldown" 		"17"
+		"AbilityManaCost" 		"25"
+		"AOERadius"				"1350"
+		"ItemCost"				"25"
+	    "OnSpellStart"
+	    {
+	    	"RunScript"
+			{
+				"ScriptFile"	"items/item_telescope.lua"
+				"Function"		"OnUse"
+				"Target"		"POINT"
+			}
+	    }
+	}
+	"item_trap_entangle"
+	{
+		"ID"					"1200"
+		"BaseClass"				"item_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"	"item_rapier"
+	}
+}

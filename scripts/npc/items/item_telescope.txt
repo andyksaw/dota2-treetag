@@ -1,0 +1,20 @@
+"item_telescope"
+{
+	"ID"					"1100"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityTextureName"	"item_rapier"
+	"AbilityCooldown" 		"17"
+	"AbilityManaCost" 		"25"
+	"AOERadius"				"1350"
+	"ItemCost"				"25"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"items/item_telescope.lua"
+			"Function"		"OnUse"
+			"Target"		"POINT"
+		}
+    }
+}

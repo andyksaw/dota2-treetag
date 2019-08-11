@@ -1,0 +1,7 @@
+"item_infernal_gem"
+{
+	"ID"					"1101"
+	"BaseClass"				"item_gem"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"ItemCost"				"0"
+}

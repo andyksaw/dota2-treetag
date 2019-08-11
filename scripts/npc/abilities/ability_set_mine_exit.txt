@@ -1,0 +1,23 @@
+"ability_set_mine_exit"
+{
+    "BaseClass"             	"ability_datadriven"
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_CREEP"
+	"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityTextureName"    	"item_quelling_blade"
+	"MaxLevel"              	"1"
+	"AbilityCastRange"			"99999"
+	"AbilityCastPoint"			"0.0"
+	"AbilityCooldown"			"1"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_set_mine_exit.lua"
+			"Function"		"OnSelectTarget"
+			"Target"		"TARGET"
+		}
+    }
+}
+
+

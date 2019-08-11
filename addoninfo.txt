@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"TeamCount" "2"
+	"IsPlayable"  "1"
+
+	"maps"      "tree_tag_wc3"
+	"tree_tag_wc3"
+	{
+	        "MaxPlayers"                    "8"
+	}
+}

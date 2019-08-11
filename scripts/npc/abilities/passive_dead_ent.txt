@@ -1,0 +1,17 @@
+"passive_dead_ent"
+{
+	"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"BaseClass" 					"ability_datadriven"
+	"Modifiers"
+	{
+		"modifier_dead_ent"
+		{
+			"Passive"				"1"
+			"States"
+		    {
+		        "MODIFIER_STATE_SPECIALLY_DENIABLE" 	"MODIFIER_STATE_VALUE_ENABLED"
+		        "MODIFIER_STATE_DISARMED"				"MODIFIER_STATE_VALUE_ENABLED"
+		    }
+		}
+	}
+}

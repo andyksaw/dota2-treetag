@@ -1,0 +1,23 @@
+"ability_smash_trees_area"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+    "BaseClass"             "ability_datadriven"
+    "AbilityTextureName"    "lina_light_strike_array"
+	"MaxLevel"              "1"
+	"AbilityCastRange" 		"500"
+	"AbilityCastPoint" 		"0.1"
+	"AbilityCooldown" 		"15"
+	"AOERadius"				"250"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_smash_trees.lua"
+			"Function"		"OnSmashArea"
+			"Target"		"POINT"
+			"Radius"		"250"
+			"DayVision"		"300"
+			"NightVision"	"300"
+		}
+    }
+}

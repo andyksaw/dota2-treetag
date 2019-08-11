@@ -1,0 +1,35 @@
+"ability_upgrade_resource_structure"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+    "BaseClass"             "ability_datadriven"
+    "AbilityTextureName"    "attribute_bonus"
+	"MaxLevel"              "3"
+    "AbilityGoldCost"    	"35 80 200"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build_upgrade.lua"
+			"Function"		"OnUpgradeFarm"
+			"Target"		"POINT"
+			"UpgradeTime"	"5 7 10"
+			"Name"			"npc_building_resource_structure_2 npc_building_resource_structure_3 npc_building_resource_structure_4 npc_building_resource_structure_5"
+			"HealthBoost"	"30 50 80"
+			"Income"		"3 5 8"
+			"Describer"		"passive_resource_structure"
+		}
+    }
+    "AbilitySpecial"
+	{
+	    "01"
+	    { 
+	        "var_type"  "FIELD_FLOAT"
+	        "cost" 		"35 80 200"
+	    }
+	    "02"
+	    { 
+	        "var_type"  "FIELD_FLOAT"
+	        "time" 		"5 7 10"
+	    }
+	}
+}

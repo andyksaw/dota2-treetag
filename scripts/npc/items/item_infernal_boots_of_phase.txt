@@ -1,0 +1,74 @@
+"item_infernal_boots_of_phase"
+{
+	"ID"							"1105"
+	"BaseClass"						"item_datadriven"
+	"AbilityTextureName"			"item_phase_boots"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+	"AbilityCooldown"				"30"
+	"AbilityManaCost"				"50"
+	"ItemCost"						"150"
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"ModifierName"			"modifier_item_phased"
+			"Target"				"CASTER"
+			"Duration"				"%duration"
+		}
+		"CreateThinker"
+		{
+			"ModifierName"			"modifier_item_phased_thinker"
+			"Target"				"CASTER"
+		}
+	}
+	"Modifiers"
+    {
+        "modifier_item_phased"
+        {
+            "IsBuff"       			"1"
+            "IsPurgable"       		"0"
+            "States"
+            {
+                "MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY"	"MODIFIER_STATE_VALUE_ENABLED"
+            }
+        } 
+        "modifier_item_phased_thinker"
+        {
+        	"IsHidden"				"1"
+            "IsPurgable"       		"0"
+            "Duration" 				"%duration"
+            "ThinkInterval" 		"0.3"
+            "OnIntervalThink"
+            {
+                "DestroyTrees"
+                {
+                    "Radius"   		"175"
+                    "Target" 		"CASTER"
+                }
+            }
+        } 
+        "modifier_item_boots_of_phase"
+        {
+            "Passive"  				"1"
+            "IsHidden"				"1"
+            "IsPurgable"       		"0"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" 	"%bonus_speed"
+            }
+        }
+    }
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"duration"				"4"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_speed"			"80"
+		}
+	}
+}

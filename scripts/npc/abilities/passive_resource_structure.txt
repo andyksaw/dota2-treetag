@@ -1,0 +1,15 @@
+"passive_resource_structure"
+{
+    "AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"            "alchemist_goblins_greed"
+    "MaxLevel"                      "4"
+    "AbilitySpecial"
+	{
+	    "01"
+	    { 
+	        "var_type"  "FIELD_FLOAT"
+	        "income" 	"1 3 5 8"
+	    }
+	}
+}

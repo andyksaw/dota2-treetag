@@ -1,0 +1,32 @@
+"ability_infernal_nuke"
+{
+    "BaseClass"             "ability_datadriven"
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"    "phoenix_supernova"
+	"AbilityCastPoint" 		"2"
+	"AbilityCooldown" 		"15"
+	"AbilityCastAnimation" 	"ACT_DOTA_ATTACK"
+	"AnimationPlaybackRate" "0.4"
+	"AbilityDamage" 		"350" 
+	"AbilityManaCost" 		"125"
+	"AbilityCooldown" 		"60"
+	"MaxLevel"              "1"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_nuke.lua"
+			"Function"		"OnNuke"
+			"Target"		"CASTER"
+		}
+    }
+    "OnAbilityPhaseStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_nuke.lua"
+			"Function"		"OnCast"
+			"Target"		"CASTER"
+		}
+    }
+}

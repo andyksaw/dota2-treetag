@@ -1,0 +1,16 @@
+"ability_sell_building"
+{
+    "BaseClass"             	"ability_datadriven"
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"    	"backdoor_protection_in_base"
+	"MaxLevel"              	"1"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_sell_building.lua"
+			"Function"		"OnSell"
+			"Target"		"CASTER"
+		}
+    }
+}

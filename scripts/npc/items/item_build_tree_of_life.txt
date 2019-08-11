@@ -1,0 +1,25 @@
+"item_build_tree_of_life"
+{
+	"ID"					"1009"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityTextureName"	"item_building_tree_of_life"
+	"AbilityGoldCost"    	"200"
+	"ItemInitialCharges"	"200"
+	"AbilityCastRange"		"500"
+	"AOERadius"				"256"
+	"ItemDroppable" 		"0"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build.lua"
+			"Function"		"OnBuild"
+			"Target"		"POINT"
+			"UnitName"		"npc_building_tree_of_life"
+			"HullRadius"	"256"
+			"BuildTime"		"8"
+			"BuildCost"    	"200"
+		}
+    }
+}

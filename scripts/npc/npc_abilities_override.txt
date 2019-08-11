@@ -1,0 +1,55 @@
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	"antimage_blink"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"0"
+		"MaxLevel"						"3"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blink_range"			"1150 1450 1850"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"min_blink_range"		"0"
+			}
+		}
+	}
+
+	"riki_permanent_invisibility"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCooldown"				"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fade_time"					"2.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fade_delay"				"2.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bonus_health_regen"		"0"
+			}
+		}
+	}
+
+}

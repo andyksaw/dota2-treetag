@@ -1,0 +1,22 @@
+"item_infernal_boots_of_travel"
+{
+	"ID"							"1106"
+	"BaseClass"						"item_travel_boots_2"
+	"AbilityTextureName"			"item_travel_boots_2"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_BUILDING"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+	"AbilityCooldown"				"60"
+	"AbilityChannelTime"			"5"
+	"AbilityManaCost"				"175"
+	"ItemCost"						"250"
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movement_speed"	"100"
+		}
+	}
+}

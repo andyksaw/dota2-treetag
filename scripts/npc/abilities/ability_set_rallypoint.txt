@@ -1,0 +1,25 @@
+"ability_set_rallypoint"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "BaseClass"             "ability_datadriven"
+    "AbilityTextureName"	"kunkka_return"
+
+    "OnCreated"
+	{
+		"RunScript"
+		{
+			"ScriptFile"			"abilities/ability_queue_rallypoint.lua"
+			"Function"				"OnCreated"
+			"Target"				"CASTER"
+		}
+	}
+    "OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"			"abilities/ability_queue_rallypoint.lua"
+			"Function"				"OnSetRally"
+			"Target"				"POINT"
+		}
+	}
+}

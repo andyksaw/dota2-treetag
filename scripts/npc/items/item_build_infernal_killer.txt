@@ -1,0 +1,26 @@
+"item_build_infernal_killer"
+{
+	"ID"					"1012"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityTextureName"	"item_building_infernal_killer"
+	"AbilityGoldCost"    	"1500"
+	"ItemInitialCharges"	"1500"
+	"AbilityCastRange"		"500"
+	"AOERadius"				"128"
+	"ItemDroppable" 		"0"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_build.lua"
+			"Function"		"OnBuild"
+			"Target"		"POINT"
+			"UnitName"		"npc_building_infernal_killer"
+			"HullRadius"	"128"
+			"BuildTime"		"15"
+			"BuildCost"    	"1500"
+		}
+    }
+}
+

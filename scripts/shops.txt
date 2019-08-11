@@ -1,0 +1,61 @@
+"dota_shops"
+{
+	"consumables"
+	{				
+		"item"		"item_gem"
+		"item"		"item_telescope"
+		"item"		"item_infernal_boots_of_force"
+		"item"		"item_infernal_boots_of_phase"
+		"item"		"item_infernal_boots_of_travel"
+	}
+
+	"attributes"
+	{
+	}
+
+	"weapons_armor"
+	{
+	}
+			
+	"misc"
+	{
+
+	}	
+	
+	"basics"
+	{
+	}
+
+	"support"
+	{
+	}
+				
+	"magics"			
+	{
+	}
+		
+	"defense"
+	{
+	}
+			
+	"weapons"
+	{		
+	}
+					
+	"artifacts"
+	{	
+	}
+
+	"sideshop1"
+	{
+	}
+
+	"sideshop2"
+	{
+	}
+	
+	"secretshop"
+	{				
+				
+	}	
+}

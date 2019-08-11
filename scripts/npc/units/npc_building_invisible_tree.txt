@@ -1,0 +1,17 @@
+"npc_building_invisible_tree"
+{
+	"Model"      				"models/props_structures/good_statue008.vmdl"
+    "BaseClass"  				"npc_dota_creature"
+    "RingRadius"				"140"
+	"StatusHealth"				"25"
+	"StatusHealthRegen"			"0"
+	"StatusMana"				"0"
+	"StatusManaRegen"			"0"
+	"BountyGoldMin"				"20"
+	"BountyGoldMax"				"25"
+    "Ability1"   				"riki_permanent_invisibility"
+    "Ability2"					"ability_sell_building"
+    "AttackCapabilities"  		"DOTA_UNIT_CAP_NO_ATTACK"
+    "MovementCapabilities"  	"DOTA_UNIT_CAP_MOVE_NONE"
+    "UnitRelationshipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+}

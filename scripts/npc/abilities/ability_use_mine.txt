@@ -1,0 +1,17 @@
+"ability_use_mine"
+{
+	"BaseClass"					"ability_datadriven"
+	"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_ALL"
+	"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	"AbilityCastRange"			"160"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_set_mine_exit.lua"
+			"Function"		"OnUseMine"
+			"Target"		"TARGET"
+		}
+    }
+}

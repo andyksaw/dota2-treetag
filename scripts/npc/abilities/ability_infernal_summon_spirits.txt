@@ -1,0 +1,18 @@
+"ability_infernal_summon_spirits"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "BaseClass"             "ability_datadriven"
+    "AbilityTextureName"    "invoker_forge_spirit"
+	"MaxLevel"              "1"
+	"AbilityCastPoint" 		"0.1"
+	"AbilityCooldown" 		"25"
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_summon_spirits.lua"
+			"Function"		"OnSummon"
+			"Target"		"CASTER"
+		}
+    }
+}

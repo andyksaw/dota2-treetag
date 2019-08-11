@@ -1,0 +1,25 @@
+"passive_sentry_tower"
+{
+    "AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"            "beastmaster_call_of_the_wild_hawk"
+    "MaxLevel"                      "3"
+    "AbilitySpecial"
+	{
+	    "01"
+	    { 
+	        "var_type"  	"FIELD_FLOAT"
+	        "day_vision" 	"750 875 1150"
+	    }
+	    "02"
+	    { 
+	        "var_type"  	"FIELD_FLOAT"
+	        "night_vision" 	"550 675 950"
+	    }
+	    "03"
+	    { 
+	        "var_type"  	"FIELD_INTEGER"
+	        "true_sight" 	"0 0 1"
+	    }
+	}
+}

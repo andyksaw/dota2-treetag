@@ -1,0 +1,8 @@
+"item_hawk_eye"
+{
+	"ID"					"1102"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName"	"item_rapier"
+	"ItemCost"				"0"
+}

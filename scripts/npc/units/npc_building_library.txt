@@ -1,0 +1,18 @@
+"npc_building_library"	
+{
+	"Model"      				"models/props_structures/cathedral001.vmdl"
+    "BaseClass"  				"npc_dota_creature"
+	"ModelScale" 				"0.8"
+    "RingRadius"				"140"
+	"StatusHealth"				"175"
+	"StatusHealthRegen"			"0"
+	"StatusMana"				"0"
+	"StatusManaRegen"			"0"
+    "Ability1"   				"ability_research_blink"
+    "Ability2"					"ability_sell_building"
+    "BountyGoldMin"				"75"
+	"BountyGoldMax"				"100"
+    "AttackCapabilities"  		"DOTA_UNIT_CAP_NO_ATTACK"
+    "MovementCapabilities"  	"DOTA_UNIT_CAP_MOVE_NONE"
+    "UnitRelationshipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+}

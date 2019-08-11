@@ -1,0 +1,7 @@
+"item_trap_entangle"
+{
+	"ID"					"1200"
+	"BaseClass"				"item_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityTextureName"	"item_rapier"
+}

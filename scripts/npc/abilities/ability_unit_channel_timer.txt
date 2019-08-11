@@ -1,0 +1,20 @@
+"ability_unit_channel_timer"
+{
+	"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELED"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"            "neutral_spell_immunity"
+	"AbilityCooldown"    			"0"
+	"AbilityManaCost"    			"0"
+    "MaxLevel"                      "25"
+    "AbilityChannelTime"			"1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25"
+
+    "OnSpellStart"
+	{
+		"RunScript"
+		{
+			"Target"				"CASTER"
+			"ScriptFile"			"abilities/ability_queue_channel.lua"
+			"Function"				"OnChannelBegin"
+		}
+	}
+}

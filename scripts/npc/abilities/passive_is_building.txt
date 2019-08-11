@@ -1,0 +1,5 @@
+"passive_is_building"
+{
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"BaseClass"						"ability_datadriven"
+}

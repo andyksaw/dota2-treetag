@@ -1,0 +1,22 @@
+"ability_queue_warrior2"
+{
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "BaseClass"             "ability_datadriven"
+	"MaxLevel"              "1"
+    
+	"AbilityGoldCost"    	"20"
+	"AbilityManaCost"       "1"
+
+    "OnSpellStart"
+    {
+    	"RunScript"
+		{
+			"ScriptFile"	"abilities/ability_queue_unit.lua"
+			"Function"		"OnQueue"
+			"Target"		"CASTER"
+			"UnitName"		"npc_dota_creature_fighter"
+			"UnitCount"		"1"
+			"BuildTime"		"3"
+		}
+    }
+}

@@ -1,0 +1,34 @@
+TO FIX:
+- XP table is incorrect
+- 0/0 hp wisp at centre of map
+- Add levels to Ensnare
+- Add levels to Flames of Speed
+- Add levels to Slam Ground
+- Multiplayer: Treants all dead = no win condition triggered
+- Multiplayer: Check that Invisible Trees are actually invisible
+- Buildings are practically invincible while being built due to percentage hp add
+- Reconnect: playerID needs to be relinked with their Treant table counterpart
+- Fix spawn points (currently spawns from dota_start because team is unassigned)
+
+================================================================================================
+
+Changes:
+- All Infernal skills now have 7 levels
+- Infernals no longer start with all skills maxed
+- Infernals start off with 1 level in Area Tree Destroy
+- Infernals start off with 1 skill point to assign
+- Treants no longer die on single hit but instead when their hp reaches 0
+- All buildings and units now provide xp to Infernals on death
+
+Balancing:
+- Infernal Flames of Speed bonus speed reduced
+- Infernal Summon Spirits now costs mana
+- Greatly reduced Infernal hp regen and starting hp
+
+Map:
+- Spawn point adjustments to accomodate for more players
+- Various aesthetic tweaks
+
+Bug Fixes:
+- Fixed an issue causing Treants not to turn into Dead Ents upon death
+- Fixed barracks being able to set a rallypoint before being 100% built

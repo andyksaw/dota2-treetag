@@ -1,0 +1,50 @@
+"item_infernal_boots_of_force"
+{
+	"ID"							"1104"
+	"BaseClass"						"item_datadriven"
+	"AbilityTextureName"			"item_boots"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+	"AbilityCastRange"				"800"
+	"AbilityCastPoint"				"0.0"
+	"AbilityCooldown"				"15"
+	"AbilityManaCost"				"50"
+	"ItemCost"						"100"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"			"items/item_boots_of_force.lua"
+			"Function"				"OnUse"
+			"Target"				"CASTER"
+			"PushLength"			"%push_length"
+		}
+	}
+	"Modifiers"
+    {
+        "modifier_item_boots_of_force"
+        {
+            "Passive"  				"1"
+            "IsHidden"				"1"
+            "IsPurgable"       		"0"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" 	"%bonus_speed"
+            }
+        } 
+    }
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"push_length"			"600"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_speed"			"100"
+		}
+	}
+}
